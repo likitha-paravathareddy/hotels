@@ -6,6 +6,19 @@ body {
   font-family: 'Raleway', sans-serif
 }
 
+.modal-backdrop {
+  --bs-backdrop-zindex: 1050;
+  --bs-backdrop-bg: #000;
+  --bs-backdrop-opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--bs-backdrop-zindex);
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bs-backdrop-bg);
+}
+
 .fa-star {
   color: rgba(254, 185, 0, 0.8);
 }
@@ -1761,6 +1774,12 @@ section {
   font-size: 20px;
   margin-right: 8px;
   color: var(--color-primary);
+}
+
+.booknow
+{
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 /*--------------------------------------------------------------

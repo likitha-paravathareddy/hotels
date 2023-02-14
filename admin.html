@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Admin Dashboard Panel</title> 
+    <style>
+        .users2{
+            height:40px;
+        }
+        #users{
+            display:none;
+        }
+        #users2{
+            display:none;
+        }
+        #users3{
+            display:none;
+        }
+        #users6{
+            display:none;
+        }
+        #addplace{
+            margin-top:10px;
+        }
+        #users1{
+            display:none;
+        }
+        table{
+            width:100%;
+        }  
+        table, th, td {
+          border:1px solid black;
+        }
+        .container{
+            padding:2px;
+        }
+        th, td {
+  padding: 3px;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="logo.png" alt="">
+            </div>
+
+            <span class="logo_name">Travel Blog</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                <li><a href="#" id="click">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">Users</span>
+                </a></li>
+                <li><a href="#" id="click2">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Places</span>
+                </a></li>
+                <li><a href="#" id="click1">
+                    <i class="uil uil-phone"></i>
+                    <span class="link-name">Queries</span>
+                </a></li>
+                <li><a href="#" id="click3">
+                    <i class="uil uil-bell" ></i>
+                    <span class="link-name">Services</span>
+                </a></li>
+                <li><a href="#" id="click4">
+                    <i class="uil uil-chart" ></i>
+                    <span class="link-name">Requests</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="index.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+            <img src="profile.jpeg" alt="">
+        </div>
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-user"></i>
+                        <span class="text">Number of Users</span>
+                        <span class="number" id="num">5</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-comments"></i>
+                        <span class="text">Number of Queries</span>
+                        <span class="number" id="num1">0</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-estate"></i>
+                        <span class="text">Number of places</span>
+                        <span class="number" id="place">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="users2"> 
+
+            </div>
+            <div id="users">
+                <div class="container">
+                    <table id="table2">
+                        
+                        <th style="background-color:darkgrey;padding:12px;">Name</th>
+                        <th style="background-color:darkgrey;padding:12px;">Password</th>
+                        <th style="background-color:darkgrey;padding:12px">E-Mail</th>
+                        <th style="background-color:darkgrey;padding:12px">Phone Number</th>
+                        <th style="background-color:darkgrey;padding:12px">Adress</th>
+                        <tbody id="usertab"></tbody>
+                        </tbody>
+    
+                    </table>
+                </div>
+
+            </div>
+            <div id="users1">
+                <div class="container">
+                    <table id="table1">
+                        <th style="background-color:darkgrey;padding:12px;">Name</th>
+                        <th style="background-color:darkgrey;padding:12px;">E-Mail</th>
+                        <th style="background-color:darkgrey;padding:12px;">Subject</th>
+                        <th style="background-color:darkgrey;padding:12px;">Message</th>
+                        <tbody id="usertab1">
+                           
+                        </tbody>
+    
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        <div class="form" id="users2">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Image Source</label>
+                  <input type="text" class="form-control" id="imgsrc" aria-describedby="emailHelp" placeholder="Enter Image Source">
+                 
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Image Name</label>
+                  <input type="text" class="form-control" id="imgname" placeholder="Enter Image Name">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Image Id</label>
+                    <input type="text" class="form-control" id="imgdata" placeholder="Enter Image Id">
+                  </div>
+                <button type="submit" id="addplace" class="btn btn-primary">Add Place</button>
+              </form>
+        </div>
+        <div id="users3">
+            <div class="container">
+                <table>
+                    <th style="background-color:darkgrey;padding:12px;">Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">Service Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">E-Mail</th>
+                    <th style="background-color:darkgrey;padding:12px;">Date_of_service</th>
+                    <th style="background-color:darkgrey;padding:12px;">Number_of_days</th>
+                    <tbody id="usertab2">
+                    </tbody>
+
+                </table>
+            </div>
+            
+        </div>
+        <div id="users6">
+            <h4 style="text-align:center">User Requests</h4>
+            <div class="container">
+                <table width="100%" >
+                    <th style="background-color:darkgrey;padding:12px;">Hotel Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">Number of days</th>
+                    <th style="background-color:darkgrey;padding:12px;">From Date</th>
+                    <th style="background-color:darkgrey;padding:12px;">To Date</th>
+                    <th style="background-color:darkgrey;padding:12px;">E-Mail</th>
+                    <th style="background-color:darkgrey;padding:12px;">Status</th>
+                    <tbody id="usertab6" style>
+                    </tbody>
+        
+                </table>
+                <table width="100%" style="margin-top:15px;" >
+                    <th style="background-color:darkgrey;padding:12px;">Hotel Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">Number of days</th>
+                    <th style="background-color:darkgrey;padding:12px;">From Date</th>
+                    <th style="background-color:darkgrey;padding:12px;">To Date</th>
+                    <th style="background-color:darkgrey;padding:12px;">E-Mail</th>
+                    <th style="background-color:darkgrey;padding:12px;">Status</th>
+                    <tbody id="usertab10" style>
+                    </tbody>
+        
+                </table>
+            </div>
+            <h4 style="text-align:center;padding-top:40px">Vendor Requests</h4>
+            <div class="container">
+                <table width="100%">
+                    <th style="background-color:darkgrey;padding:12px;">Hotel Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">Image Source</th>
+                    <th style="background-color:darkgrey;padding:12px;">Status</th>
+                    <tbody id="usertab7">
+                    </tbody>
+        
+                </table>
+                
+             
+                
+                
+        
+            </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="users.js"></script>
+    <script src="queries.js"></script>
+    <script src="places.js"></script>
+    <script src="admin.js"></script>
+    <script src="projects.js"></script>
+    <script src="requests.js"></script>
+    <script src="cart.js"></script>
+    <script src="vendorstatus.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script>
+        document.getElementById("click").onclick=function(){
+            fun();
+        }
+        function fun()
+        {
+            
+            document.getElementById("users").style.display="inline";
+            document.getElementById("users1").style.display="none";
+            document.getElementById("users2").style.display="none";
+            document.getElementById("users3").style.display="none";
+            document.getElementById("users6").style.display="none";
+        }
+        document.getElementById("click1").onclick=function(){
+            fun1();
+        }
+        function fun1()
+        {
+            
+            document.getElementById("users").style.display="none";
+            document.getElementById("users1").style.display="inline";
+            document.getElementById("users2").style.display="none";
+            document.getElementById("users3").style.display="none";
+            document.getElementById("users6").style.display="none";
+        }
+        document.getElementById("click2").onclick=function(){
+            fun2();
+        }
+        function fun2()
+        {
+            
+            document.getElementById("users").style.display="none";
+            document.getElementById("users1").style.display="none";
+            document.getElementById("users2").style.display="inline";
+            document.getElementById("users3").style.display="none";
+            document.getElementById("users6").style.display="none";
+        }
+        document.getElementById("click3").onclick=function(){
+            fun3();
+        }
+        function fun3()
+        {
+            document.getElementById("users").style.display="none";
+            document.getElementById("users1").style.display="none";
+            document.getElementById("users2").style.display="none";
+            document.getElementById("users3").style.display="inline";
+            document.getElementById("users6").style.display="none";
+        }
+        document.getElementById("click4").onclick=function(){
+    fun4();
+}
+function fun4()
+{
+    
+    document.getElementById("users").style.display="none";
+    document.getElementById("users1").style.display="none";
+    document.getElementById("users2").style.display="none";
+    document.getElementById("users3").style.display="none";
+    document.getElementById("users6").style.display="inline";
+
+}
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+</body>
+</html>

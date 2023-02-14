@@ -1,0 +1,23 @@
+.main-cont
+{
+    margin:  3% 7% 2% 7%;
+}
+
+.main-cont img{
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.main-cont h1
+{
+    text-align:center;
+    font-family: 'Lobster', cursive;
+}
+
+.main-cont p
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}

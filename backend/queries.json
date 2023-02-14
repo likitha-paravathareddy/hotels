@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Likitha",
+        "email": "likiha2911@gmail.com",
+        "subject": "Videography",
+        "message": "request for video"
+    },
+    {
+        "name": "Parvathi",
+        "email": "parvathi@gmail.com",
+        "subject": "Photography",
+        "message": "Request for Photo"
+    },
+    {
+        "name": "Swathi",
+        "email": "swathi@gmail.com",
+        "subject": "accomodation",
+        "message": "Request for hotel"
+    },
+    {
+        "name": "Lalitha",
+        "email": "lalitha2911@gmail.com",
+        "subject": "Event Management",
+        "message": "Host an event"
+    },
+    {
+        "name": "saloni",
+        "email": "lalitha2911@gmail.com",
+        "subject": "subject",
+        "message": "Good"
+    }
+]

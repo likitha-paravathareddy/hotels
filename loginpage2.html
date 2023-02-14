@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href=
+    "https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+            integrity=
+    "sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+             crossorigin="anonymous">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body style="background-image: url(9.jpg);" >
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Travel Blog</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Places</a></li>
+          <li><a href="blog.html">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="accomodation.html">Accomodation</a></li>
+              <li><a href="#">Transport</a></li>
+              <li><a href="#">Food</a></li>
+              <li><a href="#">Payment</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><input type=button class="btn btn-secondary btn-lg" onClick="location.href='loginpage.html'"
+            value='Login/Sign Up'></li>
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+    <div class="signupFrm">
+        <form action="" class="form">
+          <h1 class="title">Sign up</h1>
+          <div class="inputContainer">
+            <input type="text" class="input" id="firstname" placeholder="firstname">
+            <label for="" class="label">Name</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" id="email" placeholder="E-mail">
+            <label for="" class="label">Email</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input type="text" class="input" id="username" placeholder="username">
+            <label for="" class="label">Username</label>
+          </div>
+    
+          <div class="inputContainer">
+            <input id="password" class="input" type="password" value="" name="password" placeholder="password"  onkeyup="isGood(this.value)" />
+            <label for="" class="label">Password</label>
+          </div>
+          <small class="help-block" id="password-text"></small>
+          <div class="inputContainer" >
+            <input class="input" type="password" id="cnfpassword" placeholder="confirm password" >
+            <label for="" class="label">Confirm Password</label>
+          </div>
+
+          <div class="inputContainer">
+            <input type="text" class="input" id="address" placeholder="a">
+            <label for="" class="label">Address</label>
+          </div>
+          <div class="inputtContainer">
+          <label><a href="loginpage.html" class="label">Already Registered? Login</a></label>
+          </div>
+          <button class="submitBtn" value="Sign up" id="signup">Sign up</button>
+        </form>
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- <script src="assets/js/signup.js"></script> -->
+        <script src="assets/js/main1.js"></script>
+</body>
+</html>

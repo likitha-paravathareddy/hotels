@@ -1,0 +1,39 @@
+{
+    "data":[
+    {
+        "_id": "63e2972f8c87bee87abd8579",
+        "name": "saloni",
+        "email": "saloni@email.com",
+        "message": "how many rooms are available in june",
+        "__v": 0
+    },
+    {
+        "_id": "63e29a6c0b289365a92ef536",
+        "name": "likitha",
+        "email": "email@lik.com",
+        "message": "when are the tours available",
+        "__v": 0
+    },
+    {
+        "_id": "63e29a870b289365a92ef538",
+        "name": "sara",
+        "email": "email@sara.org",
+        "message": "is spring good",
+        "__v": 0
+    },
+    {
+        "_id": "63e29aa40b289365a92ef53a",
+        "name": "lina",
+        "email": "lina@gmail.com",
+        "message": "what is the user rating system",
+        "__v": 0
+    },
+    {
+        "_id": "63e29ac90b289365a92ef53c",
+        "name": "alisha",
+        "email": "alisha56.din@gmail.com",
+        "message": "are there more king suites in goa",
+        "__v": 0
+    }
+]
+}

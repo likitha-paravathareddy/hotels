@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "name": "likitha",
+            "age": 21,
+            "college": "sree vidyanikethan"
+        },
+        {
+            "name": "lalitha",
+            "age": 22,
+            "college": "sree vidyanikethan"
+        },
+        {
+            "name": "lokesh",
+            "age": 19,
+            "college": "cbit"
+        },
+        {
+            "name": "swathi",
+            "age": 18,
+            "college": "vit"
+        },
+        {
+            "name": "Rakesh",
+            "age": 20,
+            "college": "nit"
+        }
+    ]
+}

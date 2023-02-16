@@ -1,7 +1,7 @@
 // const options = {
 //     method: 'GET',
 //     headers: {
-//         'X-RapidAPI-Key': 'fc6a1cd463msh5d64427a724172ap11a71djsn7e4d46557571',
+//         'X-RapidAPI-Key': 'secret_key',
 //         'X-RapidAPI-Host': 'timetable-lookup.p.rapidapi.com'
 //     }
 // };

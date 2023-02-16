@@ -3547,3 +3547,9 @@ section {
 .carousel-inner .carousel-item-start {
   transform: translateX(0)
 }
+
+.bi-star-fill, .bi-star-half
+{
+  color:	#FFD700;
+  letter-spacing: 0.1em;
+}

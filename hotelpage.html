@@ -51,13 +51,14 @@
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      <nav id="navbar" class="navbar">
+      <nav id="navbar sticky-top" class="navbar">
         <ul>
           <li><a href="index.html" >Home</a></li>
           <li><a href="about.html" class="active">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Places</a></li>
           <li><a href="blog.html">Blog</a></li>
+          
           <li class="dropdown"><a href="#"><span>Pages</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="accomodation.html">Accomodation</a></li>
@@ -74,6 +75,15 @@
     </div>
   </header>
   <main id="main">
+    <nav class="navbar fixed-bottom me-auto bg-body-tertiary">
+      <div class="container-fluid" style="display: flex;
+      flex-wrap: inherit;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #FAB900;">
+        <button class="btn btn-warning" onclick="window.location.href='#booknow'">BOOK NOW</button>
+      </div>
+    </nav>
 
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/sun.jpg');">
@@ -91,6 +101,8 @@
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= About Section ======= -->
+    
+    
 
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">

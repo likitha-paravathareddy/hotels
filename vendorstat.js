@@ -14,7 +14,8 @@ $(document).ready(function(){
         hotel_name=user_data[i].name,
         image=user_data[i].img.substring(11,user_data[i].img.length),
         status=user_data[i].status
-    
+
+        
         $("#user9").append(`<tr>
         <th>${i+1}</th>
                <th>${hotel_name}</th>

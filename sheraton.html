@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="sher.css">
+    <title>Sheraton</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-warning sticky-top navbar-expand-lg me-0" data-bs-theme="dark">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#photo">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#rooms">Rooms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#amenities">Amenities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#location">Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#que">Q&A</a>
+                  </li>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookModal">
+                    Book Now
+                  </button>
+                </ul>
+              </div>
+            </div>
+      </nav>
+
+      <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Book Now</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="/" class="form" method="post">
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example1" name="fullname" class="form-control" placeholder="Full Name"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example2" name="number-of-people" class="form-control" placeholder="Number of People"/>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Text input -->
+                    <select class="form-select" name="hotel-room" aria-label="Default select example">
+                        <option selected>Select a Room</option>
+                        <option value="1">Deluxe Twin</option>
+                        <option value="2">Deluxe KIng</option>
+                      </select>
+                      <br>
+        
+                      <div class="row mb-4">
+                        <div class="col">
+                          <div class="form-outline">
+                            <label>From Date</label>
+                            <input type="date" name="start-date" id="form6Example1" class="form-control" placeholder="From Date"/>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-outline">
+                            <label>To Date</label>
+                            <input type="date" name="end-date"  id="form6Example2" class="form-control" placeholder="To Date"/>
+                            
+                          </div>
+                        </div>
+                      </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                      <input type="email" name="hotel-email" id="form6Example5" class="form-control" placeholder="email"/>
+                    </div>
+                  
+                    <!-- Number input -->
+                    
+                  
+                    
+                  
+                    <!-- Submit button -->
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-warning">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-cont">
+        <div class="card hoteltitle">
+            <div class="card-body">
+              <h3>Four Seasons Sheraton</h3>
+            </div>
+          </div>
+        <div class="place-pictures" id="photo">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Photos</h3>
+                  <img src="assets/img/m3.webp" alt="" height="400" width="1065">
+                </div>
+                <div style="margin-left:1.7%;">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#seemoreModal">
+                        see more
+                      </button>
+                </div>
+                <br>                
+              </div>
+              <!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="seemoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sheraton Pictures</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" >
+            <img src="assets/img/deltwin.png" alt="" height="150" width="150">
+            <img src="assets/img/m2.jpg" alt="" height="150" width="150">
+            <img src="assets/img/m3.webp" alt="" height="150" width="150">
+            <img src="assets/img/delking.png" alt="" height="150" width="150">
+            <img src="assets/img/sher.webp" alt="" height="150" width="150">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+        <div class="about" id="about">
+            <div class="card">
+                <div class="card-body">
+                  <h3>About</h3>
+                  <p>Whether you're in Chennai for business or leisure, you're always assured of a first-class stay at Four Points by Sheraton Mahabalipuram Resort & Convention Center. Conveniently located on the East Coast Road (ECR), our hotel is moments from Shore Temple, the beach and top area attractions. Settle into contemporary hotel rooms with free Wi-Fi, pillowtop beds, private balconies and flat-screen TVs. Our upgraded resort suites offer refreshing plunge pools. Begin or end your day in Chennai at Petals, our onsite restaurant featuring an all-day buffet and a la carte dining. Stop by Nectar - The Lounge Bar - to unwind with a cocktail in the evening. As one of Chennai's premier hotel destinations for meetings and events, you'll enjoy over 90,000 square feet of venue space with a capacity to accommodate 5,000 guests, as well as great catering and award-winning service. Find everything you need for a successful travel experience at Four Points by Sheraton Mahabalipuram Resort & Convention Center.</p>
+                </div>
+                <br>                
+              </div>
+        </div>
+
+        <div class="room-types" id="rooms">
+            <div class="card">
+                <div class="card-body">
+                  <h3>Rooms</h3>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Room Type</th>
+                        <th scope="col">People</th>
+                        <th scope="col">Inclusions</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Deluxe Twin<br><br><img src="assets/img/deltwin.png" height="200"></th>
+                        <td>Max. 2</td>
+                        <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV</td>
+                        <td>₹ 7,500 per night</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Deluxe King<br><br><img src="assets/img/delking.png" height="200"></th>
+                        <td>Max. 3</td>
+                        <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV<br><br><i class="fa-solid fa-bath" style="color: gray;"></i> Bathtub included</td>
+                        <td>₹ 10,000 per night</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br>                
+              </div>
+        </div>
+
+        <div class="amenities" id="amenities">
+            <div class="card">
+                <div class="card-body">
+                  <h3>Amenities</h3>
+                  <br>
+                  <p><i class="fa-solid fa-wifi"></i>Free WiFi <br><br> <i class="fa-solid fa-circle-check"></i> Air Conditioning   <br><br> <i class="fa-solid fa-person-swimming"></i>Swimming Pool</p>
+                </div>
+              </div>
+        </div>
+
+        <div class="location" id="location">
+            <div class="card">
+                <div class="card-body">
+                  <h3>Location</h3>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3945664.0010119365!2d77.282995477449!3d15.03774184839638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d17.4822801!2d78.41834589999999!4m5!1s0x3a53ab48bafbfd25%3A0xbc3edeae6bb7ed46!2ssheraton%20mahabalipuram!3m2!1d12.6137789!2d80.1687834!5e0!3m2!1sen!2sin!4v1676301007705!5m2!1sen!2sin" width="1065" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+        </div>
+
+        <div class="que" id="que">
+            <section id="faq" class="faq" width="100%">
+                <div class="container" data-aos="fade-up">
+          
+                  <div class="section-header">
+                    <h3>Frequently Asked Questions</h3>
+          
+                  </div>
+          
+                  <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-10">
+          
+                      <div class="accordion accordion-flush" id="faqlist">
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-1">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              What is Homestay?
+                            </button>
+                          </h3>
+                          <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Homestays are private houses offered to visitors (tourists) by the host at reasonable rates. These accommodations offer a home-like ambience, and also allow you to experience the local culture and lifestyle of the place, as well as get a taste of the local cuisine.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-2">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              How can I cancel my Booking? 
+                            </button>
+                          </h3>
+                          <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                You can cancel your booking by logging into your account or calling our customer care numbers. Yatra does not charge on Homestay cancellation. However cancellation charges would apply as per individual homestay cancellation policy.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-3">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Will I be charged if I wish to cancel my Homestay booking?
+                            </button>
+                          </h3>
+                          <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Yatra does not charge any Yatra fee for Homestay cancellation. However, the concerned Homestay Host might charge a fee for cancellation. You can either check on your confirmation voucher or call our call center for details.
+                            </div>
+                          </div>
+                        </div>
+                
+                  <!-- <table class="table">
+                    <tbody>
+                      <tr>
+                        <td>Q. What is Homestay? <br> Homestays are private houses offered to visitors (tourists) by the host at reasonable rates. These accommodations offer a home-like ambience, and also allow you to experience the local culture and lifestyle of the place, as well as get a taste of the local cuisine.</td>
+                      </tr>
+                      <tr>
+                        <td>
+                            Q. How can I cancel my Booking? <br>You can cancel your booking by logging into your account or calling our customer care numbers. Yatra does not charge on Homestay cancellation. However cancellation charges would apply as per individual homestay cancellation policy.
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            Q. Will I be charged if I wish to cancel my Homestay booking? <br>
+                            Yatra does not charge any Yatra fee for Homestay cancellation. However, the concerned Homestay Host might charge a fee for cancellation. You can either check on your confirmation voucher or call our call center for details.
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table> -->
+                <form action="" style="margin-top:30px">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Send in a question" aria-label="send in a question" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2">Submit</button>
+                      </div>                       
+                  </form>
+            
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/7b55b4da2f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+</body>
+</html>

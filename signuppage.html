@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="signstyle.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +17,13 @@
     <title>Signup Page</title>
 </head>
 <body>
+    <nav class="navbar" style="background-color:transparent;">
+        <div class="container-fluid">
+            <a href="index.html" class="logo signuplogo d-flex align-items-center">
+                <h1 style="font-family: 'Damion', cursive;">Hotellier</h1>
+              </a>
+        </div>
+      </nav>
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-11 col-sm-9 col-md-7 col-lg-6 col-xl-5 text-center p-0 mt-3 mb-2">
@@ -71,7 +80,17 @@
                                 <label class="fieldlabels">Contact No.:</label>
                                 <input id="phn" type="text" name="phno" placeholder="Contact No."/>
                                 <label class="fieldlabels">Login-Type:</label>
-                                <input id="ln" type="text" name="ln" placeholder="Login_Type"/>
+                                <input id="ln" type="text" name="ln" placeholder="Login Type"/>
+                                <label class="fieldlabels">Choose A Security Question</label><br>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">Mother's Maiden Name</option>
+                                    <option value="2">Where did you grow up?</option>
+                                    <option value="3">What is your first pet's name?</option>
+                                  </select>
+                                  <br><br>
+                                  <label class="fieldlabels">Answer:</label>
+                                <input id="secans" type="text" name="secans" placeholder="Answer To Security Question"/>
                                 <!-- <label class="fieldlabels">Alternate Contact No.: *</label>
                                 <input type="text" name="phno_2" placeholder="Alternate Contact No."/> -->
                             </div>

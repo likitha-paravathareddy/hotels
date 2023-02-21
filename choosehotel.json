@@ -1,0 +1,142 @@
+[
+    {
+        "name": "kaldan samudhra resort",
+        "price": 2,
+        "stars": 4,
+        "food": "veg",
+        "amenities": [
+            "pool",
+            "villa",
+            "outdoor",
+            "jungle",
+            "luxury",
+            "sea"
+        ]
+    },
+    {
+        "name": "sherlock hotel",
+        "price": 1,
+        "stars": 3,
+        "food": "veg",
+        "amenities": [
+            "pool"
+        ]
+    },
+    {
+        "name": "ITC Savoy",
+        "price": 3,
+        "stars": 4.5,
+        "food": "nonveg",
+        "amenities": [
+            "pool",
+            "villa"
+        ]
+    },
+    {
+        "name": "club mahindra",
+        "price": 2,
+        "stars": 5,
+        "food": "veg",
+        "amenities": [
+            "pool",
+            "villa",
+            "outdoor",
+            "luxury"
+        ]
+    },
+    {
+        "name": "radisson blue",
+        "price": 1,
+        "stars": 0,
+        "food": "nonveg",
+        "amenities": [
+            "sea"
+        ]
+    },
+    {
+        "name": "taj lake palace",
+        "price": 2,
+        "stars": 4,
+        "food": "nonveg",
+        "amenities": [
+            "outdoor",
+            "jungle"
+        ]
+    },
+    {
+        "name": "samro",
+        "price": 3,
+        "stars": 4.5,
+        "food": "veg",
+        "amenities": [
+            "pool",
+            "villa",
+            "outdoor",
+            "jungle",
+            "luxury",
+            "sea"
+        ]
+    },
+    {
+        "name": "la marvella",
+        "price": 1,
+        "stars": 3.5,
+        "food": "veg",
+        "amenities": [
+            "pool",
+            "luxury",
+            "sea"
+        ]
+    },
+    {
+        "name": "rambagh palace",
+        "price": 2,
+        "stars": 3,
+        "food": "nonveg",
+        "amenities": [
+            "pool",
+            "villa",
+            "outdoor",
+            "jungle",
+            "luxury",
+            "sea"
+        ]
+    },
+    {
+        "name": "rajvilas",
+        "price": 3,
+        "stars": 3,
+        "food": "veg",
+        "amenities": [
+            "pool",
+            "villa",
+            "outdoor",
+            "jungle",
+            "luxury",
+            "sea"
+        ]
+    },
+    {
+        "name": "jw mariott",
+        "price": 2,
+        "stars": 4.5,
+        "food": "nonveg",
+        "amenities": [
+            "pool",
+            "villa",
+            "sea"
+        ]
+    },
+    {
+        "name": "st regis",
+        "price": 1,
+        "stars": 4,
+        "food": "veg",
+        "amenities": [
+            "outdoor",
+            "jungle",
+            "luxury",
+            "sea"
+        ]
+    }
+]

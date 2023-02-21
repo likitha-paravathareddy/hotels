@@ -1,0 +1,55 @@
+.main-cont
+{
+    margin:  3% 7% 2% 7%;
+}
+
+.main-cont img{
+    margin-top: 0.5%;
+    margin-bottom: 2%;
+}
+
+.main-cont h1
+{
+    text-align:center;
+    font-family: 'Lobster', cursive;
+}
+
+.main-cont p
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pagination-container {
+    width: calc(100% - 2rem);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 0;
+    justify-content: center;
+  }
+  
+  .pagination-number,
+  .pagination-button{
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    margin: 0.25rem 0.25rem;
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: .2rem;
+  }
+  
+  .pagination-number:hover,
+  .pagination-button:not(.disabled):hover {
+    background: #fff;
+  }
+  
+  .pagination-number.active {
+    color: #fff;
+    background: #0085b6;
+  }

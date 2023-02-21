@@ -1,0 +1,26 @@
+.profiles
+{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.fullname
+{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+}
+
+#img
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h5
+{
+    text-align: center;
+}

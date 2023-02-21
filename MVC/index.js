@@ -33,6 +33,18 @@ app.use('/vendors', vendorRoutes)
 const imageRoutes = require('./routes/images')
 
 app.use('/images', imageRoutes)
+
+const blogRoutes = require('./routes/blogs')
+
+app.use('/blogs', blogRoutes)
+
+const pageRoutes = require('./routes/pages')
+
+app.use('/pages', pageRoutes)
+
+const pracRoutes=require('./routes/practice')
+
+app.use('/practice',pracRoutes)
 // console.log("hotelRoutes")
 app.listen(3007, ()=>{
   console.log("running on port number 3007")

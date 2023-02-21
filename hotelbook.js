@@ -1,5 +1,10 @@
 $(document).ready(function(){
     $("#sent").click(function(){
+      if(localStorage.getItem("currentLoggedUser")==null)
+      {
+         window.open("login.html")
+         return;
+      }
         name=$("#form6Example1").val();
      no_of_people=$("#form6Example2").val();
      dropsel=$("dropsel").val();

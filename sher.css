@@ -1,5 +1,6 @@
 body{
-    background-color: #edeee5;
+    /* background-color: #edeee5; */
+    font-family: 'Roboto', sans-serif;
 }
 .titleabove
 {
@@ -37,10 +38,10 @@ body{
     margin-bottom: 4%;
 }
 
-h3
+/* h3
 {
     font-family: 'Varela Round', sans-serif;
-}
+} */
 p
 {
     font-family: 'Roboto', sans-serif;
@@ -139,7 +140,7 @@ p
   
   #Checkout {
     z-index: 100001;
-    background: ;
+    /* background: ; */
     width: 50%;
     min-width: 300px;
     height: 100%;

@@ -1,5 +1,6 @@
 $(document).ready(function(){
-    placerefname=localStorage.getItem("currentplace")
+    placerefname=window.location.hash.substring(1);
+    
     console.log(placerefname)
     var url = 'http://127.0.0.1:3007/projects/tourists';
     
@@ -35,8 +36,13 @@ $(document).ready(function(){
                 document.getElementById("topic6").innerHTML=place_data[i].topic6,
                 document.getElementById("resortimg1").style.backgroundImage=place_data[i].resortimg1,
                 document.getElementById("resort1").innerHTML=place_data[i].resort1,
+                document.getElementById("hotel1").href="hotelpage.html#"+place_data[i].resort1.split(' ')[0],
+                console.log("hotelpage.html#"+place_data[i].resort1.split(' ')[0])
+                
                 document.getElementById("resortimg2").style.backgroundImage=place_data[i].resortimg2,
                 document.getElementById("resort2").innerHTML=place_data[i].resort2,
+                document.getElementById("hotel2").href="hotelpage.html#"+place_data[i].resort2.split(' ')[0],
+                
                 document.getElementById("resortimg3").style.backgroundImage=place_data[i].resortimg3,
                 document.getElementById("resort3").innerHTML=place_data[i].resort3,
                 document.getElementById("resortimg4").style.backgroundImage=place_data[i].resortimg4,

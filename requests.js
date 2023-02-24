@@ -8,12 +8,14 @@ $(document).ready(function () {
     // '<label for="c2">'
     $.get(url, function (data, status) {
         travel_data = data;
-        console.log(travel_data)
 
         for (i = 0; i < travel_data.length; i++) {
-            // console.log("hii....");
-            
-            console.log(travel_data[i])
+            // console.log("hii....")
+            if(travel_data[i].hotel_name=='')
+            {
+                console.log(travel_data[i])
+                continue;
+            }
             hotel_name = travel_data[i].hotel_name
             no_of_people = travel_data[i].no_of_people
             from_date = travel_data[i].from_date.substring(0, 10)
@@ -27,7 +29,7 @@ $(document).ready(function () {
             <th>${from_date}</th>
             <th>${to_date}</th>
             <th>${email}</th>
-            <th><div onclick="reject(email)" style="background:red;padding:10px;border-radius:10px;cursor:pointer;display:inline">Reject</div></th>
+            <th><div onclick="failure(email)" style="background:red;padding:10px;border-radius:10px;cursor:pointer;display:inline">Reject</div></th>
             </tr>`)
             }
             if(travel_data[i].status=="Rejected")
@@ -38,7 +40,7 @@ $(document).ready(function () {
             <th>${from_date}</th>
             <th>${to_date}</th>
             <th>${email}</th>
-            <th><div onclick="accept(email)" style="background:green;padding:10px;border-radius:10px;cursor:pointer;display:inline">Accept</div></th>
+            <th><div onclick="success(email)" style="background:green;padding:10px;border-radius:10px;cursor:pointer;display:inline">Accept</div></th>
             </tr>`)
             }
             if (travel_data[i].status=="Approved" || travel_data[i].status=="Rejected")
@@ -53,7 +55,7 @@ $(document).ready(function () {
            <th>${from_date}</th>
            <th>${to_date}</th>
            <th>${email}</th>
-           <th><div onclick="accept('${email}')" style="background:green;padding:10px;margin-left:5px;margin-right:5px;border-radius:10px;cursor:pointer;display:inline">Accept</div><div onclick="reject(email)" style="background:red;padding:10px;border-radius:10px;cursor:pointer;display:inline">Reject</div></th>
+           <th><div onclick="success('${email}')" style="background:green;padding:10px;margin-left:5px;margin-right:5px;border-radius:10px;cursor:pointer;display:inline">Accept</div><div onclick="failure(email)" style="background:red;padding:10px;border-radius:10px;cursor:pointer;display:inline">Reject</div></th>
            </tr>`)
         
 
@@ -62,7 +64,7 @@ $(document).ready(function () {
 });
 
 
-function accept(email) {
+function success(email) {
     console.log(to_date)
     var url = 'http://127.0.0.1:3007/hotels/updates'
     // $.post('http://127.0.0.1:3007/hotels/update',{email:email},(data,status)=>{
@@ -80,7 +82,7 @@ function accept(email) {
     });
 };
 
-function reject(email) {
+function failure(email) {
 
     // $.post('http://127.0.0.1:3007/hotels/update',{email:email},(data,status)=>{
     //     alert(responseText.responseText)

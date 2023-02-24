@@ -15,7 +15,7 @@ var upload=multer({storage:storage}).single("img")
 async function vendorRegistrationController(req,res){
     console.log(req.body)
     let vendorData=vendorModelCtrl.vendorModel({
-        place:req.body.name,
+        place:req.body.ids,
         name:req.body.place,
         img:"MVC/images/"+req.file.filename,
         status:"pending",
@@ -46,7 +46,7 @@ async function vendorDataFetching(req,res){
 
 function vendorDataUpdating(req,res){
     console.log(req.body)
-    vendorModelCtrl.vendorModel.updateOne({email:req.body.email},{$set:{"status":"Approved"}},(err,docs)=>{
+    vendorModelCtrl.vendorModel.updateOne({name:req.body.vendor_name},{$set:{"status":"Approved"}},(err,docs)=>{
         if(err){
             res.send("something went wrong")
         }
@@ -57,7 +57,7 @@ function vendorDataUpdating(req,res){
 } 
 
 async function vendorDataUpdatingreg(req,res){
-    vendorModelCtrl.vendorModel.updateOne({email:req.body.email},{$set:{"status":"Rejected"}},(err,docs)=>{
+    vendorModelCtrl.vendorModel.updateOne({name:req.body.vendor_name},{$set:{"status":"Rejected"}},(err,docs)=>{
         if(err){
             res.send("something went wrong")
         }

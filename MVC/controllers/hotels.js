@@ -2,7 +2,6 @@ const hotelModelCtrl=require('../models/hotelmodel')
 
 async function hotelRegistrationController(req,res){
     console.log(req.body)
-    var dat="Pending"
     let hotelData=hotelModelCtrl.hotelModel({
         hotel_name:req.body.hotel_name,
         no_of_people:req.body.no_of_people,
@@ -10,10 +9,10 @@ async function hotelRegistrationController(req,res){
         from_date:req.body.from_date,
         to_date:req.body.to_date,
         email:req.body.email,
-        status:dat
+        status:"Pending"
     })
     // console.log(hotel_data)
-    hotelModelCtrl.hotelModel.find({ email: req.body.email,name:req.body.name }).then((resp) => {
+    hotelModelCtrl.hotelModel.find({ email: req.body.email,hotel_name:req.body.hotel_name }).then((resp) => {
         if (resp.length != 0) {
             res.send("1")
         }
@@ -57,7 +56,7 @@ function hotelDataUpdating(req,res){
 
 async function hotelDataUpdatingreg(req,res){
     console.log(req.body)
-    hotelModelCtrl.hotelModel.updateOne({email:req.body.email},{$set:{"status":"Rejected"}},(err,docs)=>{
+    hotelModelCtrl.hotelModel.updateOne({email:req.body.email},{$set:{status:"Rejected"}},(err,docs)=>{
         if(err){
             res.send("something went wrong")
         }

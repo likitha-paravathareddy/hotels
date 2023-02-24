@@ -13,12 +13,10 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -54,12 +52,15 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="choosehotel.html">Hotels</a></li>
-          <li><a href="choosehotel.html">Flights</a></li>
+          <li><a href="index.html" >Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Places</a></li>
           <li><a href="blog.html" class="active">Blog</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="choosehotel.html">Hotels</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
       </nav><!-- .navbar -->
 
     </div>
@@ -81,232 +82,24 @@
     <section id="recent-blog-posts" class="recent-blog-posts">
       <div class="container" data-aos="fade-up">    
   <div class=" section-header">
-        <h2>Our Blog Posts</h2>
+        <h2 id="blog">Recent Blog Posts</h2>
         <p></p>
       </div>
 
-      <div class="row gy-5 blogrow">
+      <div class="row gy-5 blogrow" id="postblog">
 
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="post-item position-relative h-100">
+        
+      </div>
+      <br><br>
+      <button id="view" type="submit" class="btn btn-warning" style="margin-left:auto;margin-right: auto;display:flex;align-items: center;">View More</button>
 
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/new.jpeg" class="img-fluid" alt="" width="500" height="500">
-              <span class="post-date">December 12</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Extending More To Other Countries</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Rakesh</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Hodophile</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/road.jpeg" class="img-fluid" alt="" width="450"  height="500">
-              <span class="post-date">July 17</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Choosing the most pleasant roads.</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Prashanthi</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Roadie</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/sub.jpeg" class="img-fluid" alt="" width="500" height="1000">
-              <span class="post-date">September 05</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Beauty is underneath the sea</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Leena</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Rover</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
 
       </div>
-      <div class="row gy-5 blogrow">
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/new.jpeg" class="img-fluid" alt="" width="500" height="500">
-              <span class="post-date">December 12</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Extending More To Other Countries</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Rakesh</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Hodophile</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="post-item position-relative h-100">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/road.jpeg" class="img-fluid" alt="" width="450"  height="500">
-              <span class="post-date">July 17</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Choosing the most pleasant roads.</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Prashanthi</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Roadie</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-        <div class="col-xl-4 col-md-6">
-          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
-
-            <div class="post-img position-relative overflow-hidden">
-              <img src="assets/img/sub.jpeg" class="img-fluid" alt="" width="500" height="1000">
-              <span class="post-date">September 05</span>
-            </div>
-
-            <div class="post-content d-flex flex-column">
-
-              <h3 class="post-title">Beauty is underneath the sea</h3>
-
-              <div class="meta d-flex align-items-center">
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-person"></i> <span class="ps-2">Leena</span>
-                </div>
-                <span class="px-3 text-black-50">/</span>
-                <div class="d-flex align-items-center">
-                  <i class="bi bi-folder2"></i> <span class="ps-2">Rover</span>
-                </div>
-              </div>
-
-              <hr>
-
-              <a href="#" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
-
-            </div>
-
-          </div>
-        </div><!-- End post item -->
-
-      </div>
-
-      </div>
+      <br><br>
+      <p style="text-align: center;">Want to write a blog?</p>
+      <button type="submit" class="btn btn-warning" style="margin-left:auto;margin-right: auto;display:flex;align-items: center;" onclick="funadd()">Add New Blog</button>
     </section>
     <!-- End Recent Blog Posts Section -->
-
-    <!-- <div class="pagination">
-        <a href="#">&laquo;</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">6</a>
-        <a href="#">&raquo;</a>
-      </div> -->
-
-      <nav class="pagination-container">
-        <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
-          &lt;
-        </button>
-    
-        <div id="pagination-numbers">
-    
-        </div>
-    
-        <button class="pagination-button" id="next-button" aria-label="Next page" title="Next page">
-          &gt;
-        </button>
-      </nav>
-
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 
@@ -405,6 +198,11 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
+  <script>
+    function funadd(){
+      window.open("blogwrite.html")
+    }
+  </script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -414,8 +212,9 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
-  <script src="blog.js"></script>
+  <script src="blogemb.js"></script>
 
 </body>
 

@@ -25,6 +25,10 @@
         #users{
             display:none;
         }
+        #status{
+            display:none;
+        }
+    
         #users2{
             display:none;
         }
@@ -90,6 +94,10 @@
                     <i class="uil uil-chart" ></i>
                     <span class="link-name">Requests</span>
                 </a></li>
+                <li><a href="#" id="click5">
+                    <i class="uil uil-chart" ></i>
+                    <span class="link-name">Statistics</span>
+                </a></li>
             </ul>
             
             <ul class="logout-mode">
@@ -148,6 +156,50 @@
                     </div>
                 </div>
             </div>
+            <div>
+                <p>
+
+                </p>
+            </div>
+            <div id="status">
+                <div id="stat">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    
+                    <canvas id="myChart" style="width:100%;max-width:800px"></canvas>
+                    
+                    <script>
+                    var xValues = ["Kaldan Samudra Resort", "Le Meridian", "Sheraton Four Seasons", "Sherlock Hotel", "Club Mahindra"];
+                    var yValues = [30000, 15000, 20000, 25000, 28000];
+                    var barColors = ["blue", "blue","blue","blue","blue"];
+                    
+                    new Chart("myChart", {
+                      type: "bar",
+                      data: {
+                        labels: xValues,
+                        datasets: [{
+                          backgroundColor: barColors,
+                          data: yValues
+                        }]
+                      },
+                      options: {
+                        legend: {display: false},
+                        title: {
+                          display: true,
+                          text: "Revenue"
+                        }
+                      }
+                    });
+                    </script>
+                </div>
+                <div>
+                    <p>
+                        
+                    </p>
+                </div>
+                <div>
+                    <a href="http://127.0.0.1:3000/sheet1"  class="btn btn-primary"  style="padding-top:10px;">download Transactions</a>
+                </div>
+            </div>
             <div class="users2"> 
 
             </div>
@@ -184,19 +236,20 @@
             </div>
         </div>
         <div class="form" id="users2">
-            <form>
+            <form method="POST" action="http://127.0.0.1:3007/places/reg"  id="msform" enctype="multipart/form-data">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Image Source</label>
-                  <input type="text" class="form-control" id="imgsrc" aria-describedby="emailHelp" placeholder="Enter Image Source">
+                  <label for="exampleInputEmail1">Image Source</label><br>
+                  
+                  <input id="imgsrc" type="file" name="imgplace" accept="image/*"><br><br>
                  
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Image Name</label>
-                  <input type="text" class="form-control" id="imgname" placeholder="Enter Image Name">
+                  <label for="exampleInputPassword1">Image Name</label><br>
+                  <input type="text" class="form-control" id="imgname" name="name" placeholder="Enter Image Name"><br>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Image Id</label>
-                    <input type="text" class="form-control" id="imgdata" placeholder="Enter Image Id">
+                    <label for="exampleInputPassword1">Image Id</label><br>
+                    <input type="text" class="form-control" id="imgdata" name="data" placeholder="Enter Image Id">
                   </div>
                 <button type="submit" id="addplace" class="btn btn-primary">Add Place</button>
               </form>
@@ -230,7 +283,7 @@
                     </tbody>
         
                 </table>
-                <table width="100%" style="margin-top:15px;" >
+                <table width="100%" style="margin-top:20px;" >
                     <th style="background-color:darkgrey;padding:12px;">Hotel Name</th>
                     <th style="background-color:darkgrey;padding:12px;">Number of days</th>
                     <th style="background-color:darkgrey;padding:12px;">From Date</th>
@@ -252,12 +305,19 @@
                     </tbody>
         
                 </table>
-                
-             
-                
-                
+                <table width="100%" style="margin-top:20px;">
+                    <th style="background-color:darkgrey;padding:12px;">Hotel Name</th>
+                    <th style="background-color:darkgrey;padding:12px;">Image Source</th>
+                    <th style="background-color:darkgrey;padding:12px;">Status</th>
+                    <tbody id="usertab12">
+                    </tbody>
         
+                </table>
             </div>
+            
+            
+        
+        
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
@@ -338,6 +398,19 @@ function fun4()
     document.getElementById("users6").style.display="inline";
 
 }
+document.getElementById("click5").onclick=function(){
+            fun5();
+        }
+        function fun5()
+        {
+            
+            document.getElementById("users").style.display="none";
+            document.getElementById("users1").style.display="none";
+            document.getElementById("users2").style.display="none";
+            document.getElementById("users3").style.display="none";
+            document.getElementById("users6").style.display="none";
+            document.getElementById("status").style.display="block";
+        }
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>

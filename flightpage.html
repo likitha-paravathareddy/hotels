@@ -38,6 +38,16 @@
   <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
   <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
 
+  <style>
+    .card-footer
+    {
+      border-color: transparent;
+    }
+    p{
+      font-family: 'roboto', sans-serif;
+    }
+  </style>
+
   
 </head>
 
@@ -118,13 +128,38 @@
 
           </div>
 
+          <div style="margin-left:7%; margin-right: 7%;margin-bottom:5%; margin-top:2%">
+            <table class="table">
+              <thead>
+                <td>#</td>
+                <td>From</td>
+                <td><i class="fa-solid fa-right-left"></i></td>
+                <td>To</td>
+                <td>Price</td>
+                <td></td>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                <td>Hyderabad</td>
+                <td>Mumbai</td>
+                <td>Goa</td>
+                <td>Rs 7,500</td>
+                <td><button class="btn btn-warning">Fly Now</button></td>
+
+                </tr>
+              </tbody>
+
+            </table>
+          </div>
+
           <div style="margin-left:7%; margin-right:7%;">
             <h5>Popular Flights</h5>
           <div class="card-group">
             <div class="card">
               <img src="assets/img/patna.webp" height="250" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 style="display:inline; float:left;" class="card-title">Hyderabad to Patna</h5>
+                <p style="display:inline; float:left;" class="card-title">Hyderabad to Patna</p>
                  
               </div>
               <div class="card-footer">
@@ -134,7 +169,7 @@
             <div class="card">
               <img src="assets/img/kol.jpg" height="250" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 style="display:inline; float:left;" class="card-title">Hyderabad to Kolkata</h5>
+                <p style="display:inline; float:left;" class="card-title">Hyderabad to Kolkata<p>
                  
                 
               </div>
@@ -145,7 +180,7 @@
             <div class="card">
               <img src="assets/img/goa.jpeg" height="250"  class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 style="display:inline; float:left;" class="card-title">Hyderabad to Goa</h5>
+                <p style="display:inline; float:left;" class="card-title">Hyderabad to Goa</p>
                  
                
               </div>
@@ -169,7 +204,7 @@
             <div class="card">
               <img src="assets/img/del.webp" height="250" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 style="display:inline; float:left;" class="card-title">Hyderabad to Delhi</h5>
+                <p style="display:inline; float:left;" class="card-title">Hyderabad to Delhi</p>
                  
                 
               </div>
@@ -180,7 +215,7 @@
             <div class="card">
               <img src="assets/img/blr.jpg" height="250"  class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 style="display:inline; float:left;" class="card-title">Hyderabad to Banglore</h5>
+                <p style="display:inline; float:left;" class="card-title">Hyderabad to Banglore</p>
                 
               </div>
               <div class="card-footer">
@@ -189,7 +224,7 @@
             </div>
           </div>
 
-          <button onclick="myFunction()" class="btn btn-warning">See More</button>
+          <button onclick="myFunction()" id="seebutton" class="btn btn-warning" style="margin-top:2%;display:flex;">See More</button>
 
           
         </div>
@@ -409,6 +444,7 @@
           var x = document.getElementById("mydiv");
           
             x.style.display = "flex";
+            document.getElementById("seebutton").style.display="hidden"
 
           }
         </script>

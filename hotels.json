@@ -7,22 +7,26 @@
             {
                 "type":"basic",
                 "number":"7",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"7000"
+                "cost":"7000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":3
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":4
             }
 
         ],
@@ -39,22 +43,26 @@
             {
                 "type":"basic",
                 "number":"7",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":3
             }
 
         ],
@@ -71,22 +79,27 @@
             {
                 "type":"basic",
                 "number":"2",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
+
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":3
             },
             {
                 "type":"deluxe",
                 "number":"7",
-                "cost":"10000"
+                "cost":"10000",
+                "people":3
             }
 
         ],
@@ -103,22 +116,14 @@
             {
                 "type":"basic",
                 "number":"2",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
-            },
-            {
-                "type":"king",
-                "number":"6",
-                "cost":"12000"
-            },
-            {
-                "type":"deluxe",
-                "number":"5",
-                "cost":"10000"
+                "cost":"5000",
+                "people":2
             }
 
         ],
@@ -135,22 +140,14 @@
             {
                 "type":"basic",
                 "number":"12",
-                "cost":"7500"
+                "cost":"7500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5700"
-            },
-            {
-                "type":"king",
-                "number":"6",
-                "cost":"8000"
-            },
-            {
-                "type":"deluxe",
-                "number":"5",
-                "cost":"10000"
+                "cost":"5700",
+                "people":2
             }
 
         ],
@@ -165,14 +162,16 @@
         "rooms":
         [
             {
-                "type":"basic",
+                "type":"twin",
                 "number":"4",
-                "cost":"1500"
+                "cost":"1500",
+                "people":2
             },
             {
-                "type":"twin",
+                "type":"king",
                 "number":"3",
-                "cost":"5600"
+                "cost":"5600",
+                "people":4
             }
 
         ],
@@ -189,27 +188,32 @@
             {
                 "type":"basic",
                 "number":"4",
-                "cost":"1500"
+                "cost":"1500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"15600"
+                "cost":"15600",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"8900"
+                "cost":"8900",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"5",
-                "cost":"19000"
+                "cost":"19000",
+                "people":2
             },
             {
                 "type":"deluxe king",
                 "number":"6",
-                "cost":"18000"
+                "cost":"18000",
+                "people":2
             }
 
         ],
@@ -226,32 +230,38 @@
             {
                 "type":"basic",
                 "number":"14",
-                "cost":"15000"
+                "cost":"15000",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"32",
-                "cost":"15600"
+                "cost":"15600",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"9",
-                "cost":"8900"
+                "cost":"8900",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"5",
-                "cost":"19000"
+                "cost":"19000",
+                "people":2
             },
             {
                 "type":"deluxe king",
                 "number":"6",
-                "cost":"18000"
+                "cost":"18000",
+                "people":2
             },
             {
                 "type":"presidential",
                 "number":"2",
-                "cost":"27800"
+                "cost":"27800",
+                "people":2
             }
 
         ],
@@ -268,17 +278,20 @@
             {
                 "type":"basic",
                 "number":"14",
-                "cost":"15000"
+                "cost":"15000",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"32",
-                "cost":"15600"
+                "cost":"15600",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"9",
-                "cost":"8900"
+                "cost":"8900",
+                "people":2
             }
 
         ],
@@ -295,22 +308,26 @@
             {
                 "type":"basic",
                 "number":"15",
-                "cost":"16500"
+                "cost":"16500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"8",
-                "cost":"53000"
+                "cost":"53000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":2
             }
 
         ],
@@ -327,12 +344,14 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             }
 
         ],
@@ -349,22 +368,26 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":2
             }
 
         ],
@@ -381,22 +404,26 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":2
             }
 
         ],
@@ -413,22 +440,26 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":2
             }
 
         ],
@@ -445,22 +476,26 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":1
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":3
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":4
             }
 
         ],
@@ -477,12 +512,14 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             }
 
         ],
@@ -499,17 +536,14 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
-            },
-            {
-                "type":"king",
-                "number":"6",
-                "cost":"12000"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":3
             }
 
         ],
@@ -526,22 +560,26 @@
             {
                 "type":"basic",
                 "number":"5",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":3
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":4
             }
 
         ],
@@ -558,22 +596,26 @@
             {
                 "type":"basic",
                 "number":"7",
-                "cost":"6500"
+                "cost":"6500",
+                "people":2
             },
             {
                 "type":"twin",
                 "number":"3",
-                "cost":"5000"
+                "cost":"5000",
+                "people":2
             },
             {
                 "type":"king",
                 "number":"6",
-                "cost":"12000"
+                "cost":"12000",
+                "people":3
             },
             {
                 "type":"deluxe",
                 "number":"1",
-                "cost":"10000"
+                "cost":"10000",
+                "people":4
             }
 
         ],
@@ -581,6 +623,398 @@
         "months":[1,2,3,4,11,10],
         "amenities":["swimming pool","veg"]
 
+    },
+    {
+        "name":"ITC Savoy",
+        "location": "Mumbai",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"15",
+                "cost":"16000",
+                "people":2
+            },
+            {
+                "type":"twin",
+                "number":"23",
+                "cost":"27000",
+                "people":2
+            },
+            {
+                "type":"king",
+                "number":"46",
+                "cost":"32000",
+                "people":4
+            },
+            {
+                "type":"deluxe",
+                "number":"4",
+                "cost":"40000",
+                "people":4
+            }
+
+        ],
+        "stars":"5",
+        "months":[1,2,3,6,7,10],
+        "amenities":["swimming pool","trek","luxury","nonveg","spa"]
+
+    },
+    {
+        "name":"Samro Stays",
+        "location": "shimla",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"2",
+                "cost":"4300",
+                "people":1
+            },
+            {
+                "type":"twin",
+                "number":"2",
+                "cost":"7000",
+                "people":2
+            },
+            {
+                "type":"deluxe",
+                "number":"1",
+                "cost":"50000",
+                "people":1
+            }
+
+        ],
+        "stars":"4",
+        "months":[1,2,3,4,5,6],
+        "amenities":["trek","luxury","nonveg"]
+
+    },
+    {
+        "name":"Taj Lake Resort",
+        "location": "Delhi",
+        "rooms":
+        [
+            {
+                "type":"king",
+                "number":"26",
+                "cost":"20000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"13",
+                "cost":"30000",
+                "people":4
+            },
+            {
+                "type":"presidential",
+                "number":"1",
+                "cost":"60000",
+                "people":2
+            }
+
+        ],
+        "stars":"5",
+        "months":[7,8,9,10,11,12],
+        "amenities":["swimming pool","trek","luxury","nonveg"]
+
+    },
+    {
+        "name":"Taj Falakhnuma Palace",
+        "location": "Hyderabad",
+        "rooms":
+        [
+            {
+                "type":"king",
+                "number":"26",
+                "cost":"25000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"13",
+                "cost":"34000",
+                "people":4
+            },
+            {
+                "type":"presidential",
+                "number":"4",
+                "cost":"60000",
+                "people":2
+            }
+
+        ],
+        "stars":"5",
+        "months":[7,8,9,10,11,12],
+        "amenities":["swimming pool","trek","luxury","nonveg","spa"]
+
+    },
+    {
+        "name":"Soho House",
+        "location": "Goa",
+        "rooms":
+        [
+            {
+                "type":"twin",
+                "number":"26",
+                "cost":"20000",
+                "people":2
+            },
+            {
+                "type":"basic",
+                "number":"13",
+                "cost":"13000",
+                "people":4
+            }
+
+        ],
+        "stars":"3.5",
+        "months":[7,8,9,10],
+        "amenities":["nonveg"]
+
+    },
+    {
+        "name":"Club Mahindra White Meadows",
+        "location": "Kulu Manali",
+        "rooms":
+        [
+            {
+                "type":"twin",
+                "number":"5",
+                "cost":"24000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"13",
+                "cost":"39000",
+                "people":4
+            }
+
+        ],
+        "stars":"3",
+        "months":[7,8,9,10,11,12],
+        "amenities":["swimming pool","spa"]
+
+    },
+    {
+        "name":"Snow Valley Resorts",
+        "location": "Kulu Manali",
+        "rooms":
+        [
+            {
+                "type":"twin",
+                "number":"5",
+                "cost":"5000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"2",
+                "cost":"9000",
+                "people":4
+            }
+
+        ],
+        "stars":"3",
+        "months":[7,8,9,10,11,12],
+        "amenities":["swimming pool","breakfast"]
+
+    },
+    {
+        "name":"Himalayan Heights Manali",
+        "location": "Kulu Manali",
+        "rooms":
+        [
+            {
+                "type":"twin",
+                "number":"5",
+                "cost":"5000",
+                "people":3
+            }
+
+        ],
+        "stars":"3",
+        "months":[1,2,3,4,5,6,7,8,9,10,11,12],
+        "amenities":["breakfast"]
+
+    },
+    {
+        "name":"Kasol Heights",
+        "location": "Parvati Valley",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"7",
+                "cost":"6500",
+                "people":2
+            },
+            {
+                "type":"twin",
+                "number":"3",
+                "cost":"7000",
+                "people":2
+            },
+            {
+                "type":"king",
+                "number":"6",
+                "cost":"12000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"1",
+                "cost":"10000",
+                "people":4
+            }
+
+        ],
+        "stars":"4.5",
+        "months":[1,2,3,6,7,10],
+        "amenities":["swimming pool","trek","luxury","nonveg"]
+
+    },
+    {
+        "name":"The Himalayan Village",
+        "location": "Parvati Valley",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"7",
+                "cost":"6500",
+                "people":2
+            },
+            {
+                "type":"twin",
+                "number":"3",
+                "cost":"5000",
+                "people":2
+            },
+            {
+                "type":"king",
+                "number":"6",
+                "cost":"12000",
+                "people":2
+            },
+            {
+                "type":"deluxe",
+                "number":"1",
+                "cost":"10000",
+                "people":3
+            }
+
+        ],
+        "stars":"3",
+        "months":[1,2,3,4,11,10],
+        "amenities":["swimming pool","veg"]
+
+    },
+    {
+        "name":"Snowflakes Resort",
+        "location": "Parvati Valley",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"2",
+                "cost":"6500",
+                "people":2
+
+            },
+            {
+                "type":"twin",
+                "number":"3",
+                "cost":"5000",
+                "people":2
+            },
+            {
+                "type":"king",
+                "number":"6",
+                "cost":"12000",
+                "people":3
+            },
+            {
+                "type":"deluxe",
+                "number":"7",
+                "cost":"10000",
+                "people":3
+            }
+
+        ],
+        "stars":"2",
+        "months":[1,2,3,6,7,10],
+        "amenities":["swimming pool"]
+
+    },
+    {
+        "name":"Sam dunes safari camp",
+        "location": "Thar",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"27",
+                "cost":"1882",
+                "people":1
+            }
+
+        ],
+        "stars":"2",
+        "months":[1,2,3,6,7,10],
+        "amenities":["wifi"]
+
+    },
+    {
+        "name":"Desert Springs Resort",
+        "location": "Thar",
+        "rooms":
+        [
+            {
+                "type":"basic",
+                "number":"35",
+                "cost":"5691",
+                "people":2
+            },
+            {
+                "type":"king",
+                "number":"6",
+                "cost":"12000",
+                "people":2
+            }
+
+        ],
+        "stars":"4",
+        "months":[1,2,3,4,11,10],
+        "amenities":["swimming pool","spa"]
+
+    },
+    {
+        "name":"Guhantara",
+        "location": "Silicon Valley",
+        "rooms":
+        [
+            {
+                "type":"twin",
+                "number":"3",
+                "cost":"5980",
+                "people":2
+            },
+            {
+                "type":"deluxe",
+                "number":"7",
+                "cost":"10000",
+                "people":3
+            }
+
+        ],
+        "stars":"3.7",
+        "months":[1,2,3,4,5,6,7,8,9,10,11,12],
+        "amenities":["swimming pool","spa"]
+
     }
-    
+
+
 ]

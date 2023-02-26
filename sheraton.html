@@ -37,9 +37,6 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#que">Q&A</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#reviews">Reviews</a>
-                  </li>
                   <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookModal">
                     Book Now
                   </button>
@@ -107,7 +104,6 @@
                     
                   
                     <!-- Submit button -->
-                    <button type="submit" name="submitbutton" class="btn btn-primary btn-block mb-4" onclick="location.href = 'index.html';">Submit</button>
                   </form>
             </div>
             <div class="modal-footer">
@@ -122,14 +118,13 @@
         <div class="card hoteltitle">
             <div class="card-body">
               <h3>Four Seasons Sheraton</h3>
-              <h6>Ecr-Omr Junction, East Coast Rd, Poonjeri, Mahabalipuram, Tamil Nadu 603104</h6>
             </div>
           </div>
         <div class="place-pictures" id="photo">
             <div class="card">
                 <div class="card-body">
                     <h3>Photos</h3>
-                  <img src="assets/img/sher.webp" alt="" height="400" width="1065">
+                  <img src="assets/img/m3.webp" alt="" height="400" width="1065">
                 </div>
                 <div style="margin-left:1.7%;">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#seemoreModal">
@@ -149,11 +144,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" >
-            <img src="assets/img/m1.jpg" alt="" height="150" width="150">
+            <img src="assets/img/deltwin.png" alt="" height="150" width="150">
             <img src="assets/img/m2.jpg" alt="" height="150" width="150">
             <img src="assets/img/m3.webp" alt="" height="150" width="150">
-            <img src="assets/img/m-4.jpg" alt="" height="150" width="150">
-            <img src="assets/img/m5.jpg" alt="" height="150" width="150">
+            <img src="assets/img/delking.png" alt="" height="150" width="150">
+            <img src="assets/img/sher.webp" alt="" height="150" width="150">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
@@ -175,20 +170,8 @@
 
         <div class="room-types" id="rooms">
             <div class="card">
-              
                 <div class="card-body">
                   <h3>Rooms</h3>
-                  <br> <br>
-                  <div class="input-group">
-                    <span class="input-group-text" style="background-color:transparent">From:</span>
-                    <input type="date" id="fromplace" aria-label="First name" class="form-control" placeholder="from">
-                    <span class="input-group-text" style="background-color:transparent">To:</span>
-                    <input type="date" id="toplace" aria-label="First name" class="form-control" placeholder="to">
-                    <span class="input-group-text" style="background-color:transparent">Number of Rooms:</span>
-                    <input type="text" id="date" aria-label="First name" class="form-control" >
-                    <button onclick="checkhotel()" class="btn btn-warning">Check Availability</button>
-                  </div>
-                  <br> <br>
                   <table class="table">
                     <thead>
                       <tr>
@@ -196,44 +179,20 @@
                         <th scope="col">People</th>
                         <th scope="col">Inclusions</th>
                         <th scope="col">Price</th>
-                        <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">Deluxe Twin<br><br><img src="assets/img/deltwin.jpg" height="200"></th>
+                        <th scope="row">Deluxe Twin<br><br><img src="assets/img/deltwin.png" height="200"></th>
                         <td>Max. 2</td>
                         <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV</td>
                         <td>₹ 7,500 per night</td>
-                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button></td>
                       </tr>
                       <tr>
-                        <th scope="row">Deluxe King<br><br><img src="assets/img/delking.jpg" height="200"></th>
+                        <th scope="row">Deluxe King<br><br><img src="assets/img/delking.png" height="200"></th>
                         <td>Max. 3</td>
                         <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV<br><br><i class="fa-solid fa-bath" style="color: gray;"></i> Bathtub included</td>
                         <td>₹ 10,000 per night</td>
-                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Basic<br><br><img src="assets/img/delking.jpg" height="200"></th>
-                        <td>Max. 3</td>
-                        <td><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV</td>
-                        <td>₹ 2,000 per night</td>
-                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Presidential<br><br><img src="assets/img/delking.jpg" height="200"></th>
-                        <td>Max. 3</td>
-                        <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV<br><br><i class="fa-solid fa-bath" style="color: gray;"></i> Bathtub included</td>
-                        <td>₹ 10,000 per night</td>
-                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Deluxe King<br><br><img src="assets/img/delking.jpg" height="200"></th>
-                        <td>Max. 3</td>
-                        <td><i class="fa-solid fa-wifi" style="color:blue"></i> Free WiFi<br><br> <i class="fa-solid fa-mug-saucer" style="color: rgb(70, 49, 12)"></i>  Breakfast Included<br><br><i class="fa-solid fa-tv" style="color:orange"></i>  LED TV<br><br><i class="fa-solid fa-bath" style="color: gray;"></i> Bathtub included</td>
-                        <td>₹ 21,000 per night</td>
-                        <td><button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookingModal">Book Now</button></td>
                       </tr>
                     </tbody>
                   </table>
@@ -247,18 +206,7 @@
                 <div class="card-body">
                   <h3>Amenities</h3>
                   <br>
-                  <table class="table" style="border-color: transparent;">
-                    <thead>
-                      <tr>
-                        <th scope="col"><i class="fa-solid fa-wifi"></i></th>
-                        <th scope="col">Free WiFi</th>
-                        <th scope="col"><i class="fa-solid fa-circle-check"></i></th>
-                        <th scope="col">Air Conditioning</th>
-                        <th scope="col"><i class="fa-solid fa-person-swimming"></i></th>
-                        <th scope="col">Swimming Pool</th>
-                      </tr>
-                    </thead>
-                  </table>
+                  <p><i class="fa-solid fa-wifi"></i>Free WiFi <br><br> <i class="fa-solid fa-circle-check"></i> Air Conditioning   <br><br> <i class="fa-solid fa-person-swimming"></i>Swimming Pool</p>
                 </div>
               </div>
         </div>
@@ -273,10 +221,65 @@
         </div>
 
         <div class="que" id="que">
-            <div class="card">
-                <div class="card-body">
-                  <h3>Questions & Answers</h3>
-                  <table class="table">
+            <section id="faq" class="faq" width="100%">
+                <div class="container" data-aos="fade-up">
+          
+                  <div class="section-header">
+                    <h3>Frequently Asked Questions</h3>
+          
+                  </div>
+          
+                  <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-10">
+          
+                      <div class="accordion accordion-flush" id="faqlist">
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-1">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              What is Homestay?
+                            </button>
+                          </h3>
+                          <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Homestays are private houses offered to visitors (tourists) by the host at reasonable rates. These accommodations offer a home-like ambience, and also allow you to experience the local culture and lifestyle of the place, as well as get a taste of the local cuisine.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-2">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              How can I cancel my Booking? 
+                            </button>
+                          </h3>
+                          <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                You can cancel your booking by logging into your account or calling our customer care numbers. Yatra does not charge on Homestay cancellation. However cancellation charges would apply as per individual homestay cancellation policy.
+                            </div>
+                          </div>
+                        </div><!-- # Faq item-->
+          
+                        <div class="accordion-item">
+                          <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#faq-content-3">
+                              <i class="bi bi-question-circle question-icon"></i>
+                              Will I be charged if I wish to cancel my Homestay booking?
+                            </button>
+                          </h3>
+                          <div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                            <div class="accordion-body">
+                                Yatra does not charge any Yatra fee for Homestay cancellation. However, the concerned Homestay Host might charge a fee for cancellation. You can either check on your confirmation voucher or call our call center for details.
+                            </div>
+                          </div>
+                        </div>
+                
+                  <!-- <table class="table">
                     <tbody>
                       <tr>
                         <td>Q. What is Homestay? <br> Homestays are private houses offered to visitors (tourists) by the host at reasonable rates. These accommodations offer a home-like ambience, and also allow you to experience the local culture and lifestyle of the place, as well as get a taste of the local cuisine.</td>
@@ -293,129 +296,15 @@
                         </td>
                       </tr>
                     </tbody>
-                  </table>
-                  <form action="">
+                  </table> -->
+                <form action="" style="margin-top:30px">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Send in a question" aria-label="send in a question" aria-describedby="button-addon2">
                         <button class="btn btn-outline-primary" type="button" id="button-addon2">Submit</button>
                       </div>                       
                   </form>
-                </div>
-              </div>
+            
         </div>
-
-        <div class="reviews" id="reviews">
-          <div class="card overflow-auto">
-              <div class="card-body">
-                <h3>Reviews</h3>
-                <h5>Hotellier Reviews</h5>
-                <div class="row" style="margin-left:2%; margin-right:2%;margin-top:2%; margin-bottom:2%;">
-                <div class="card w-25 mb-3" style="border-radius:0%">
-                  <div class="card-body">
-                    <h5 class="card-title">Overall Rating</h5>
-                    <h5 style="color:rgb(55, 170, 55)">4.5/5</h5>
-                  </div>
-                </div>
-                
-                <div class="card w-75" style="border-radius:0%; border-color:transparent">
-                  <div class="card-body">
-                    <table class="table">
-                      <tbody>
-                        <tr>
-                          <td style="color:rgb(55, 170, 55)">3</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim ducimus numquam quos itaque magnam quidem eaque, amet totam facilis excepturi asperiores sit veritatis eveniet ipsam odit eum nam quibusdam.</td>
-                        </tr>
-                        <tr>
-                          <td style="color:rgb(55, 170, 55)">4.5</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim ducimus numquam quos itaque magnam quidem eaque, amet totam facilis excepturi asperiores sit veritatis eveniet ipsam odit eum nam quibusdam.</td>
-                        </tr>
-                        <tr>
-                          <td style="color:rgb(55, 170, 55)">4</td>
-                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit enim ducimus numquam quos itaque magnam quidem eaque, amet totam facilis excepturi asperiores sit veritatis eveniet ipsam odit eum nam quibusdam.</td>
-                        </tr>
-                        
-                      </tbody>
-
-                    </table>
-                  </div>
-                </div>
-              </div>
-
-                
-              </div>
-            </div>
-      </div>
-
-      </div>
-
-      <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header" style="background-color: #FCC106;">
-              <h1 class="modal-title fs-5" id="exampleModalLabel" style="color:black">Pay Now</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="container">
-                    <div class="card-row">
-                        <span class="visa"></span>
-                        <span class="mastercard"></span>
-                        <span class="amex"></span>
-                        <span class="discover"></span>
-                    </div>
-                    <form>
-                        <div class="form-group">
-                            <label for="PaymentAmount">Payment amount</label>
-                            <div class="amount-placeholder">
-                                <span>₹</span>
-                                <span>3500.00</span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label or="NameOnCard">Name on card</label>
-                            <input id="NameOnCard" class="form-control" type="text" maxlength="255"></input>
-                        </div>
-                        <div class="form-group">
-                            <label for="CreditCardNumber">Card number</label>
-                            <input id="CreditCardNumber" class="null card-image form-control" type="text"></input>
-                        </div>
-                        <div class="expiry-date-group form-group">
-                            <label for="ExpiryDate">Expiry date</label>
-                            <input id="ExpiryDate" class="form-control" type="text" placeholder="MM / YY" maxlength="7"></input>
-                        </div>
-                        <div class="security-code-group form-group">
-                            <label for="SecurityCode">Security code</label>
-                            <div class="input-container" >
-                                <input id="SecurityCode" class="form-control" type="text" ></input>
-                                <i id="cvc" class="fa fa-question-circle"></i>
-                            </div>
-                            <div class="cvc-preview-container two-card hide">
-                                <div class="amex-cvc-preview"></div>
-                                <div class="visa-mc-dis-cvc-preview"></div>
-                            </div>
-                        </div>
-                        <div class="zip-code-group form-group">
-                            <label for="ZIPCode">pin code</label>
-                            <div class="input-container">
-                                <input id="ZIPCode" class="form-control" type="text" maxlength="10"></input>
-                                <a tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left" data-content="Enter the ZIP/Postal code for your credit card billing address."><i class="fa fa-question-circle"></i></a>
-                            </div>
-                        </div>
-                        <button id="PayButton" style="margin-top:2%;" class="btn btn-block btn-success submit-button" type="submit">
-                            <span class="submit-button-lock"></span>
-                            <span class="align-middle">Pay ₹3500.00</span>
-                        </button>
-                    </form>
-                
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-outline-warning">Pay</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
 
 

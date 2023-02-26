@@ -59,12 +59,12 @@
     <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
-        <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/black.jpg');">
+        <div id="blogimg" class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/black.jpg');">
             <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
 
-                <h2 class="subtitle">{Blog Title}</h2>
-                <h5 class="subtitle">{Subtitle}</h5>
-                <p class="authorname">saloni dayal</p>
+                <h4 id="blogtitle" style="color:azure" class="subtitle">Blog Title</h4>
+                <h5 id="blogsub" style="color:azure" class="subtitle">A traveler without observation is a bird without wings</h5>
+                <p id="author" style="color:azure" class="authorname">saloni dayal</p>
 
             </div>
         </div><!-- End Breadcrumbs -->
@@ -128,14 +128,14 @@
 
             </div>
             <div class="likebuttonsection">
-                <a href="" class="paw-button">
+                <a id="like" href="" class="paw-button">
                     <div class="text">
                         <svg>
                             <use xlink:href="#heart">
                         </svg>
                         <span>Like</span>
                     </div>
-                    <span>12</span>
+                    <span id="likenum">10</span>
                     <div class="paws">
                         <svg class="paw">
                             <use xlink:href="#paw">
@@ -191,10 +191,12 @@
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
         <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
-        <script src="blog.js"></script>
+        <script src="blogs.js"></script>
+        <script src="blogspage.js"></script>
 
 </body>
 

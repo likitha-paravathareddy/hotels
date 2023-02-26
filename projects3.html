@@ -208,12 +208,12 @@
         <div class="imageGrid" id="search" data-aos="fade-up" data-aos-delay="200">
             <div class="tile filter-hill" id="resortimg1" style="background-image: url('assets/img/res1.jpg.crdownload');">
               <div class="textWrapper">
-                <div class="content"><a href="hotels.html"><h3 id="resort1">Kaldan Samudra Resort</h3></a></div>
+                <div class="content"><a id="hotel1" href="hotelpage.html"><h3 id="resort1">Kaldan Samudra Resort</h3></a></div>
               </div>
             </div><!--
           --><div class="tile " id="resortimg2" style="background-image: url('assets/img/res2.jpg');">
             <div class="textWrapper">
-              <div class="content"><a href=""><h3 id="resort2">Four Points Sheraton</h3></a></div>
+              <div class="content"><a id="hotel2" href="hotelpage.html"><h3 id="resort2">Four Points Sheraton</h3></a></div>
             </div>
             </div><!--
           --><div class="tile" id="resortimg3" style="background-image: url('assets/img/res3.png');">
@@ -304,9 +304,10 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span> </a>
             </div>
           </div>
+        
           <!-- <h5 class="mt-2 fw-light">advances one slide at a time</h5> -->
         </div>
-        
+        <button type="submit" class="btn btn-warning" style="margin-left:auto;margin-right: auto;display:flex;align-items: center;" onclick="funtravel()">Travel Now</button>
 
 
         <!-- <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -360,6 +361,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="projects.js"></script>
   <!-- Template Main JS File -->
+  <script>
+    function funtravel(){
+      window.open("flights/flights.html")
+    }
+  </script>
   <script src="places.js"></script>
   <script src="placesdiv.js"></script>
   <script src="assets/js/main.js"></script>

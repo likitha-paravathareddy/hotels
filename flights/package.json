@@ -1,0 +1,15 @@
+{
+  "name": "flights",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shortest.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.4.3",
+    "ts-jest": "^29.0.5"
+  }
+}

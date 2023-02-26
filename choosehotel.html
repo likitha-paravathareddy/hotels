@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Travel Blog</title>
+    <title>Hotellier</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -34,6 +34,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="assets/css/main.css" rel="stylesheet">
+    <script src="choosehotels.js"></script>
 
     <!-- =======================================================
   * Template Name: UpConstruction - v1.3.0
@@ -62,7 +63,6 @@
         </div>
 
         <!-- ======= Header ======= -->
-
         <header id="header" class="header d-flex align-items-center">
             <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
@@ -74,46 +74,24 @@
                   <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
                   <nav id="navbar" class="navbar">
                     <ul>
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="choosehotel.html" class="active">Hotels</a></li>
-                        <li><a href="choosehotel.html">Flights</a></li>
-                        <li><a href="projects.html">Places</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="about.html">About</a></li>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="projects.html">Places</a></li>
+                      <li><a href="choosehotels.html" class="active">Hotels</a></li>
+                      <li><a href="blog.html">Blog</a></li>
+                      <li><a href="contact.html">Contact</a></li>
                   </nav><!-- .navbar -->
 
             </div>
         </header>
-        <div class="booking" style="margin-left:7%; margin-right:7%;">
-        <div class="input-group" style="margin-top: -2%;">
-            <input style="background-color:white;; border-width: 0.25em; border-color: #FCC106;" type="text" id="toplace" aria-label="loc" class="form-control" placeholder="Where are you going?">
-            <span class="input-group-text" style="background-color:white; border-width: 0.25em; border-color: #FCC106;"><i class="fa-solid fa-location-dot"></i></span>
-           
-            <input style="background-color:white;; border-width: 0.25em; border-color: #FCC106;" type="date" id="fromplace" aria-label="First name" class="form-control" placeholder="from">
-            <input style="background-color:white;; border-width: 0.25em; border-color: #FCC106;" type="date" id="toplace" aria-label="First name" class="form-control" placeholder="to">
-            <span class="input-group-text" style="background-color:white; border-width: 0.25em; border-color: #FCC106;">Number of Rooms:</span>
-        
-            <input style="background-color:white;; border-width: 0.25em; border-color: #FCC106;" type="text" id="roomnum" aria-label="First name" class="form-control" >
-            
-            <button onclick="checkhotel()" class="btn btn-warning">Find</button>
-          </div>
-        </div>
-
 
         <section id="constructions" class="constructions">
             <div class="container" data-aos="fade-up">
+
                 <div class="section-header">
                     <h2>Popular Hotels</h2>
                 </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Type something here..." aria-label="" aria-describedby="button-addon2" style="background-color:transparent;">
-                    <button class="btn btn-warning" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
-                  </div>
-                  <br><br>
-
-                
-
-                
                 <div class="row">
                     <div class="col-sm-6 w-25 mb-3 mb-sm-0">
                         <div class="card"
@@ -122,43 +100,14 @@
                                 <h5 class="card-title">FILTERS</h5>
                                 <hr>
                                 <p class="card-text">Price Range</p>
-                                <label for="customRange2" class="form-label">Choose low mid or high</label>
+                                <label for="customRange2" class="form-label">Choose low or mid or high</label>
                                 <input type="range" class="form-range" min="1" max="3" id="customRange2">
-                                <!-- <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      6000+
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  >
-                    <label class="form-check-label" for="flexCheckChecked">
-                      5001-6000
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      4001-5000
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  >
-                    <label class="form-check-label" for="flexCheckChecked">
-                      3001-4000
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"  >
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Under 3000
-                    </label>
-                  </div> -->
+             
                                 <hr>
 
                                 <p>Star Rating</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="5" id="flexCheck">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -166,7 +115,7 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDefault">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
@@ -174,14 +123,14 @@
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="3" id="flexCheckDefault">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         </i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
                                             class="bi bi-star-fill"></i>
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="0" id="flexCheckNorating">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         No Ratings
                                     </label>
@@ -189,14 +138,14 @@
                                 <hr>
                                 <p>Food Preferences</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    <input class="form-check-input" type="radio" value="veg" name="flexRadioDefault"
                                         id="flexRadioDefault1">
                                     <label class="form-check-label" for="flexRadioDefault1">
                                         Vegetarian
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    <input class="form-check-input" type="radio" value="nonveg" name="flexRadioDefault"
                                         id="flexRadioDefault2">
                                     <label class="form-check-label" for="flexRadioDefault2">
                                         Non-Vegetarian
@@ -205,43 +154,43 @@
                                 <hr>
                                 <p>Amenities</p>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckSwimming">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Swimming Pool
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckVillas">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Villas
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckOutdoor">
                                     <label class="form-check-label" for="flexCheckDefault">
                                         Outdoor Activities
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckJungle">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Jungle Trek
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckLuxury">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Luxury
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckSea">
                                     <label class="form-check-label" for="flexCheckChecked">
                                         Sea Facing
                                     </label>
                                 </div>
                                 <br>
-                                <button class="btn btn-warning">Filter</button>
+                                <button id="filter" class="btn btn-warning">Filter</button>
 
                             </div>
                         </div>
@@ -400,28 +349,28 @@
                             <!-- <div class="card-body">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="content"> <a href="#">
+                                        <div class="col-md-4" id="Kaldan">
+                                            <div class="content"> <a href="hotelpage.html#Kaldan">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg1" style="height: 200px"
                                                         src="assets/img/oberoi.jpg">
                                                     <div class="content-details fadeIn-bottom">
                                                         <h3 class="content-title" id="topic1">Kaldan Samudhra Resort</h3>
-                                                        <p class="content-text"><i class="fa fa-map-marker">Mahabalipuram</i></p>
+                                                        <p class="content-text"><i class="fa fa-map-marker"></i></p>
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="content"> <a href="#">
+                                        <div class="col-md-4" id="Sherlock">
+                                            <div class="content"> <a href="hotelpage.html">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg2" style="height: 200px" src="assets/img/leela.jpg">
                                                     <div class="content-details fadeIn-bottom">
                                                         <h3 class="content-title" id="topic2">Sherlock Hotel</h3>
-                                                        <p class="content-text"><i class="fa fa-map-marker">Ooty</i></p>
+                                                        <p class="content-text"><i class="fa fa-map-marker"></i></p>
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="ITC">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg3" style="height: 200px" src="assets/img/itc.jpg">
@@ -434,7 +383,7 @@
                                     </div>
                                     <br> <br>
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Club">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg4" style="height: 200px" src="assets/img/obkol.jpg">
@@ -444,7 +393,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Radisson">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg5" style="height: 200px" src="assets/img/nat.jpg">
@@ -454,7 +403,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Taj">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg6" style="height: 200px"
@@ -469,7 +418,7 @@
                                     </div>
                                     <br><br>
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Samro">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg1" style="height: 200px"
@@ -480,7 +429,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="La">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg2" style="height: 200px" src="assets/img/lam.jpg">
@@ -490,7 +439,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Rambagh">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg3" style="height: 200px" src="assets/img/ram.jpg">
@@ -503,7 +452,7 @@
                                     </div>
                                     <br><br>
                                     <div class="row">
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Rajvilas">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg1" style="height: 200px"
@@ -514,7 +463,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Mariott">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg2" style="height: 200px" src="assets/img/jw.jpg">
@@ -524,7 +473,7 @@
                                                     </div>
                                                 </a> </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-4" id="Regis">
                                             <div class="content"> <a href="#">
                                                     <div class="content-overlay"></div> <img class="content-image"
                                                         id="topicimg3" style="height: 200px" src="assets/img/st.jpg">
@@ -537,8 +486,7 @@
                                     </div>
 
                                 </div>
-
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -551,98 +499,8 @@
 
 
 
-        <footer id="footer" class="footer">
 
-            <div class="footer-content position-relative">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-4 col-md-6">
-                            <div class="footer-info">
-                                <h3>Travel Blog</h3>
-                                <p>
-                                    Street-no:2,Nizampet,<br>
-                                    Hyderabad,Telangana<br><br>
-                                    <strong>Phone:</strong> +91 97543352626<br>
-                                    <strong>Email:</strong> travelblog@example.com<br>
-                                </p>
-                                <div class="social-links d-flex mt-3">
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><i
-                                            class="bi bi-twitter"></i></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><i
-                                            class="bi bi-facebook"></i></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><i
-                                            class="bi bi-instagram"></i></a>
-                                    <a href="#" class="d-flex align-items-center justify-content-center"><i
-                                            class="bi bi-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div><!-- End footer info column-->
-
-                        <div class="col-lg-2 col-md-3 footer-links">
-                            <h4>Useful Links</h4>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About us</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="#">Terms of service</a></li>
-                                <li><a href="#">Privacy policy</a></li>
-                            </ul>
-                        </div><!-- End footer links column-->
-
-                        <div class="col-lg-2 col-md-3 footer-links">
-                            <h4>Our Services</h4>
-                            <ul>
-                                <li><a href="#">Photography</a></li>
-                                <li><a href="#">Videography</a></li>
-                                <li><a href="#">Travel guide</a></li>
-                                <li><a href="#">Accomodation</a></li>
-                                <li><a href="#">Transportation</a></li>
-                            </ul>
-                        </div><!-- End footer links column-->
-
-                        <div class="col-lg-2 col-md-3 footer-links">
-                            <h4>Collaboration</h4>
-                            <ul>
-                                <li><a href="#">Paytm</a></li>
-                                <li><a href="#">Red Bus</a></li>
-                                <li><a href="#">Trivago</a></li>
-                                <li><a href="#">Zomato</a></li>
-                                <li><a href="#">Hyderabadi Creations</a></li>
-                            </ul>
-                        </div><!-- End footer links column-->
-
-                        <div class="col-lg-2 col-md-3 footer-links">
-                            <h4>Company</h4>
-                            <ul>
-                                <li><a href="#">Terms & conditions</a></li>
-                                <li><a href="#">Privacy Policies</a></li>
-                                <li><a href="#">Site Map</a></li>
-
-                            </ul>
-                        </div><!-- End footer links column-->
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-legal text-center position-relative">
-                <div class="container">
-                    <div class="copyright">
-                        &copy; Copyright <strong><span>Travel Blog</span></strong>. All Rights Reserved
-                    </div>
-                    <div class="credits">
-                        <!-- All the links in the footer should remain intact. -->
-                        <!-- You can delete the links only if you purchased the pro version. -->
-                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
-                        Designed by <a href="https://bootstrapmade.com/">Darwinbox</a>
-                    </div>
-                </div>
-            </div>
-
-        </footer> <!-- End Footer -->
-
+                       
         <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
                 class="bi bi-arrow-up-short"></i></a>
 
@@ -659,10 +517,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
         <!-- Template Main JS File -->
-
-        <script src="assets/js/index.js"></script>
+        
         <script src="assets/js/main.js"></script>
-        <script src="index.js"></script>
+       
 </body>
 
 </html>

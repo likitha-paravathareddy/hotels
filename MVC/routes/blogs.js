@@ -7,9 +7,10 @@ app.use(cors())
 
 const blogDetail = require('../controllers/blogs')
 
-routes.post('/reg', blogDetail.blogRegistrationController)
+routes.post('/reg',blogDetail.upload,blogDetail.blogRegistrationController)
 routes.get('/reg', blogDetail.blogDataFetching)
-// routes.post('/updates',blogDetail.blogDataUpdating)
-// routes.post('/updatesreg',blogDetail.blogDataUpdatingreg)
+routes.post('/updates',blogDetail.blogDataUpdating)
+routes.post('/updateviews',blogDetail.blogDataViewUpdating)
+
 
 module.exports = routes

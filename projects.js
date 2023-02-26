@@ -10,7 +10,7 @@ $(document).ready(function(){
     let template=
     '<div class="tile" style="background-image: url('+places[i].src+');">'+
     '<div class="textWrapper">'+
-    '<div class="content"><a id='+places[i].data+' href="PLACES .html"><h2>'+places[i].name+'</h2></a></div>'
+    '<div class="content"><a id='+places[i].data+' href='+"projects3.html#"+places[i].data+'><h2>'+places[i].name+'</h2></a></div>'
     '</div>'+
   '</div>'
     $("#parent").append(template)

@@ -1,9 +1,21 @@
 const placeModelCtrl=require('../models/placemodel')
 
+const multer=require('multer')
+
+var storage=multer.diskStorage({
+    destination:function(req,file,cb){
+        cb(null,"./images");
+    },
+    filename:function(req,file,cb){
+        cb(null,file.originalname);
+    }
+})
+var upload=multer({storage:storage}).single("imgplace")
+
 async function placeRegistrationController(req,res){
     console.log(req.body)
     let placeData=placeModelCtrl.placeModel({
-        src:req.body.src,
+        src:"MVC/images/"+req.file.filename,
         name:req.body.name,
         data:req.body.data,
     });
@@ -36,4 +48,4 @@ async function placeDataFetching(req,res){
 
 }
 
-module.exports={ placeRegistrationController , placeDataFetching }
+module.exports={ placeRegistrationController , placeDataFetching,upload }

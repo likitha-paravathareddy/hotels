@@ -33,24 +33,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="blogstyle.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <title>Blogs</title>
 </head>
 
 <body>
-    <div class="main-cont">
-    <form action="/" method="post">
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Hotellier</h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul >
+          <li ><a href="index.html" style="color:black;" class="active">Home</a></li>
+          <li><a href="about.html" style="color:black">About</a></li>
+          <li><a href="services.html" style="color:black">Services</a></li>
+          <li><a href="projects.html" style="color:black">Places</a></li>
+          <li><a href="choosehotel.html" style="color:black">Hotels</a></li>
+          <li><a href="blog.html" style="color:black">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+         
+
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header>
+    <div style="padding-top: 100px;" class="main-cont">
+    <form method="POST" action="http://127.0.0.1:3007/blogs/reg"  id="msform" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Blog Title</label>
-            <input type="text" class="form-control" id="blogtitle" placeholder="name@example.com">
+            <input type="text" name="title" class="form-control" id="blogtitle" placeholder="Blog Title">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Author Name</label>
-            <input type="text" class="form-control" id="authname" placeholder="name@example.com">
+            <input type="text" name="name" class="form-control" id="authname" placeholder="Author Name">
+          </div>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">Blog Image</label>
+            <input class="form-control" name="image" type="file" id="formFile">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Blog Body</label>
-            <textarea class="form-control" id="blogbody" rows="3"></textarea>
+            <textarea class="form-control" id="blogbody" rows="3" name="data"></textarea>
           </div>
           <button class="btn btn-warning" id="blogsubmit">Submit</button>
 

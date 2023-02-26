@@ -1,30 +1,31 @@
 
 $(document).ready(function(){
   $("#addplace").click(function(){
-     src=$("#imgsrc").val();
-     name=$("#imgname").val();
-     data=$("#imgdata").val();
-     var data1={
-        src:src,
-        name:name,
-        data:data
-      };
-      data1=JSON.stringify(data1);
-      // alert(data1);
-     var url = 'http://127.0.0.1:3007/places/reg';
-     $.ajaxSetup({ 
-        headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-     }
-     });
-     $.post(url,data1,function(xhr,status,responseText){
-      if(responseText.responseText=="1")
-      {
-        alert("place request already exists sorry for inconvinience we will get back to you soon");
-        return;
-      }
-     });
+        window.open("admin.html")
+//      src=$("#imgsrc").val();
+//      name=$("#imgname").val();
+//      data=$("#imgdata").val();
+//      var data1={
+//         src:src,
+//         name:name,
+//         data:data
+//       };
+//       data1=JSON.stringify(data1);
+//       // alert(data1);
+//      var url = 'http://127.0.0.1:3007/places/reg';
+//      $.ajaxSetup({ 
+//         headers: {
+//         'Content-Type': 'application/json',
+//         'Accept': 'application/json'
+//      }
+//      }); $.post(url,data1,function(xhr,status,responseText){
+//       if(responseText.responseText=="1")
+//       {
+//     
+//         alert("place request already exists sorry for inconvinience we will get back to you soon");
+//         return;
+//       }
+//      });
   });
 });
 

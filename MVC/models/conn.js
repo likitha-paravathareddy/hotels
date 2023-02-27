@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-const url="mongodb://localhost:27017/travels"
+const url="mongodb+srv://hotellier:hotellier123@hotels.0yyc1ag.mongodb.net/test"
 
 mongoose.connect(url)
 mongoose.Promise=global.Promise;

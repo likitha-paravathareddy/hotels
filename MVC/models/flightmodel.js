@@ -17,6 +17,10 @@ const flightSchema=mongoose.Schema({
     costOfPlane:
     {
         type:Number
+    },
+    flightDistance:
+    {
+        type:Number
     }
 
 })

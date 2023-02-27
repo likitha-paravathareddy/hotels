@@ -7,7 +7,8 @@ async function flightRegistrationController(req,res){
         from:req.body.from,
         to:req.body.to,
         flightdate:req.body.flightdate,
-        costOfPlane: req.body.costOfPlane
+        costOfPlane: req.body.costOfPlane,
+        flightDistance: req.body.flightDistance
     })
     flightModelCtrl.flightModel.find({ from: req.body.from,to:req.body.to, flightdate: req.body.flightdate}).then((resp) => {
         

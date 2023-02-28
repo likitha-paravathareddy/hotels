@@ -43,7 +43,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Soho House",
+                "image":"assets/img/soho.jpg"
+            },
+            {
+                "name":"Taj Falakhnuma Palace",
+                "image":"assets/img/obkol.jpg"
+            },
+            {
+                "name":"Samro Stays",
+                "image":"assets/img/samro.jpg"
+            }
+        ]
 
     },
     {
@@ -90,7 +105,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -138,7 +168,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -173,7 +218,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Club Mahindra White Meadows",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Snow Valley Resorts",
+                "image":"assets/img/hotelimages/2.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -208,7 +268,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Soho House",
+                "image":"assets/img/soho.jpg"
+            },
+            {
+                "name":"Taj Falakhnuma Palace",
+                "image":"assets/img/obkol.jpg"
+            },
+            {
+                "name":"Samro Stays",
+                "image":"assets/img/samro.jpg"
+            }
+        ]
 
     },
     {
@@ -243,7 +318,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Trident",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Mariott",
+                "image":"assets/img/hotelimages/16.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -296,7 +386,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -355,7 +460,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"taj lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"trident",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -396,7 +516,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -443,7 +578,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Sheraton",
+                "image":"assets/img/raj.jpg"
+            },
+            {
+                "name":"peerless inn",
+                "image":"assets/img/p1.jpg"
+            },
+            {
+                "name":"Samro Stays",
+                "image":"assets/img/samro.jpg"
+            }
+        ]
 
     },
     {
@@ -478,11 +628,26 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"taj lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"trident",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
-        "name":"Sheraton",
+        "name":"Blue Bay Bin",
         "location": "Mahabalipuram",
         "img":"assets/img/hotelimages/11.jpg",
         "rooms":
@@ -525,13 +690,28 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
-        "name":"Sheraton",
+        "name":"Shirley's Inn",
         "location": "Mahabalipuram",
-        "img":"assets/img/hotelimages/5.jpg",
+        "img":"assets/img/hotelimages/1.jpg",
         "rooms":
         [
             {
@@ -572,7 +752,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Oberoi",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -619,7 +814,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Oberoi",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -666,7 +876,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"taj lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"trident",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -701,7 +926,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -736,7 +976,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"taj lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"trident",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -783,7 +1038,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Oberoi",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -830,7 +1100,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Soho House",
+                "image":"assets/img/soho.jpg"
+            },
+            {
+                "name":"Taj Falakhnuma Palace",
+                "image":"assets/img/obkol.jpg"
+            },
+            {
+                "name":"Samro Stays",
+                "image":"assets/img/samro.jpg"
+            }
+        ]
 
     },
     {
@@ -877,7 +1162,21 @@
         "review":
         {
             
-        }
+        },"recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Oberoi",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -918,7 +1217,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -959,7 +1273,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"taj lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"trident",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -1000,7 +1329,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Club Mahindra White Meadows",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Snow Valley Resorts",
+                "image":"assets/img/hotelimages/2.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -1060,7 +1404,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Club Mahindra White Meadows",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Snow Valley Resorts",
+                "image":"assets/img/hotelimages/2.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -1095,7 +1454,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Soho House",
+                "image":"assets/img/soho.jpg"
+            },
+            {
+                "name":"Taj Falakhnuma Palace",
+                "image":"assets/img/obkol.jpg"
+            },
+            {
+                "name":"Samro Stays",
+                "image":"assets/img/samro.jpg"
+            }
+        ]
 
     },
     {
@@ -1160,7 +1534,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -1207,7 +1596,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Club Mahindra White Meadows",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Snow Valley Resorts",
+                "image":"assets/img/hotelimages/2.jpg"
+            },
+            {
+                "name":"Snow Flakes Resort",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -1255,7 +1659,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Sam dunes safari camp",
+                "image":"assets/img/hotelimages/1.jpg"
+            },
+            {
+                "name":"Snow Valley Resorts",
+                "image":"assets/img/hotelimages/2.jpg"
+            },
+            {
+                "name":"Sheraton",
+                "image":"assets/img/p1.jpg"
+            }
+        ]
 
     },
     {
@@ -1308,7 +1727,22 @@
         "review":
         {
             
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"Taj",
+                "image":"assets/img/hotelimages/13.jpg"
+            },
+            {
+                "name":"Taj Lake",
+                "image":"assets/img/taj.jpg"
+            },
+            {
+                "name":"Oberoi",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     },
     {
@@ -1343,7 +1777,22 @@
         "review":
         {
 
-        }
+        },
+        "recommendations":
+        [
+            {
+                "name":"gem park",
+                "image":"assets/img/mys.jpg"
+            },
+            {
+                "name":"zostel",
+                "image":"assets/img/nas.jpeg"
+            },
+            {
+                "name":"la bloom",
+                "image":"assets/img/p3.jpg"
+            }
+        ]
 
     }
 
